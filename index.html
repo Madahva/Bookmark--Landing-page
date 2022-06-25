@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bookmark | Landing page</title>
   <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./src/styles/normalize.css">
   <link rel="stylesheet" href="./src/styles/index.css">
   <link rel="stylesheet" href="./src/styles/header.css">
@@ -16,6 +21,7 @@
   <link rel="stylesheet" href="./src/styles/contact.css">
   <link rel="stylesheet" href="./src/styles/footer.css">
 
+  <script src="https://kit.fontawesome.com/a17eedded9.js" crossorigin="anonymous"></script>
   <script defer src="./src/main.js"></script>
 </head>
 
@@ -25,7 +31,39 @@
     <button class="header__buttton">
       <img src="./src/images/header/icon-hamburger.svg" alt="Hamburguer button" draggable="false" loading="lazy">
     </button>
-    <nav>
+
+    <div class="header__modal">
+      <div class="header__modal-header">
+        <img class="header__logo" src="./src/images/header/logo-bookmark-white.svg" draggable="false" alt="Bookmark Logo">
+        <button class="header__modal-buttton">
+          <i class="fa-solid fa-xmark fa-xl"></i>
+        </button>
+      </div>
+
+      <div class="header__modal-body">
+        <nav class="header__modal-nav">
+          <div>
+            <a href="#features">Features</a>
+          </div>
+          <div>
+            <a href="#pricing">Pricing</a>
+          </div>
+          <div>
+            <a href="#contact">Contact</a>
+          </div>
+          <div>
+            <a href="#">Login</a>
+          </div>   
+        </nav>
+      </div>
+
+      <div class="header__modal-footer">
+        <a href="#"><i class="fa-brands fa-facebook-square fa-xl"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>        
+      </div>
+    </div>
+
+    <nav class="header__nav-desktop">
       <a href="#features">Features</a>
       <a href="#pricing">Pricing</a>
       <a href="#contact">Contact</a>
@@ -33,7 +71,7 @@
     </nav>
   </header>
 
-  <!-- <main class="main">
+  <!--  <main class="main">
     <section class="hero">
       <div class="hero__text">
         <h1 class="hero__text-tittle">A Simple Bookmark Manager</h1>
@@ -161,9 +199,9 @@
         <button type="submit">Contact Us</button>
       </form>
     </section>
-  </main>
+  </main> -->
 
-  <footer class="footer">
+ <!--  <footer class="footer">
     <img src="./src/images/header/logo-bookmark.svg" alt="Bookmark Logo" class="footer__image">
     <a href="">Features</a>
     <a href="">Pricing</a>
@@ -172,7 +210,7 @@
       <div></div>
       <div></div>
     </div>
-  </footer>   --> 
+  </footer>  -->  
 </body>
 
 </html>

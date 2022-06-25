@@ -4,11 +4,84 @@
   justify-content: space-between;
 }
 
-.header nav { 
+.header__nav-desktop { 
   display: none;
 }
 
-.header__buttton {
+.header__buttton, .header__modal-buttton {
   background-color: transparent;
   border: none;
+}
+
+.header__modal {
+  background-color: rgba(37, 43, 70, .96);
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  padding: 2.5rem 2rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.header__modal-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.header__modal-buttton i {
+  color: white;
+}
+
+.header__modal-buttton i:hover {
+  color:hsl(0, 94%, 66%);
+  transition: all ease-in-out 200ms;
+  transform: scale(1.2);
+}
+
+
+.header__modal-nav div{
+  border-top: 1px solid hsla(229, 8%, 60%, .5);
+  padding: 1rem 0;
+}
+
+.header__modal-nav a {
+  border-radius: .3rem;
+  border: 2px solid transparent;
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  padding: .5rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header__modal-nav a:hover {
+  background-color: rgba(37, 43, 70, .4);
+  border: 2px solid white;
+  transition: all ease-in-out 300ms;
+}
+
+.header__modal-footer {
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 31vh;
+}
+
+.header__modal-footer a {
+  color: white;
+}
+
+.header__modal-footer a:hover {
+  color: hsl(0, 94%, 66%);
+  transition: all ease-in-out 200ms;
 }
