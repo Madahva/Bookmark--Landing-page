@@ -1,0 +1,14 @@
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header nav { 
+  display: none;
+}
+
+.header__buttton {
+  background-color: transparent;
+  border: none;
+}
