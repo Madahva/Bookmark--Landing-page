@@ -1,10 +1,9 @@
 .hero {
   display: flex;
   flex-direction: column-reverse;
-  margin-top: 2rem;
   margin-bottom: 4rem;
+  margin-top: 2rem;
   width: 100%;
-
 }
 
 .hero__image-container {
@@ -15,8 +14,8 @@
 
 .hero__image-container img {
   height: auto;
-  max-width: fit-content;
-  padding-left: .7rem;
+  max-width: clamp(450px, 111vh, 500px);
+  padding-left: clamp(.7rem, 5vw, 14rem);
   width: 95%;
 }
 
@@ -34,11 +33,15 @@
   right: 0;
 }
 
+.hero__text {
+  padding-inline: clamp(2.5rem, 10vw, 8rem);
+}
+
 .hero__text-tittle {
   font-weight: 500;
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
   line-height: 2.5rem;
   margin: 4rem 0 0 0;
-  padding-inline: 2rem;
   text-align: center;
 }
 
@@ -46,7 +49,6 @@
   color: var(--grey);
   line-height: 1.5rem;
   margin: 2rem 0;
-  padding-inline: 2rem;
   text-align: center;
 }
 
@@ -54,16 +56,16 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding-inline: 2rem;
 }
 
 .hero__text-links a {
   border-radius: .3rem;
   border: 1px solid transparent;
   box-shadow: 2px 3px 4px #ccc;
+  color: hsl(227, 5%, 37%);
   font-size: 14px;
   font-weight: 500;
-  padding: .8rem 1rem;
+  padding: clamp(.8rem, 2vw, 1rem) clamp(1rem, 2vw, 2rem);
   text-decoration: none;
   transition: all ease-in-out 300ms;
 }
@@ -87,11 +89,26 @@
   color: hsl(227, 5%, 37%);
 }
 
-@media (min-width: 920px) {
+@media (min-width:620px) {
+  .hero__image-container img {
+    padding-left: clamp(.1rem, 20vw, 10rem);
+  }
+
+  .blue-bg {
+    min-height: 76%;
+    min-width: 60%;
+  }
+
+  .hero__text-links a {
+    padding: 1rem 3.5rem;
+  }
+}
+
+@media (min-width: 900px) {
   .hero {
     flex-direction: row;
-    padding-left: clamp(3rem, 22vw, 8rem);
     justify-content: space-between;
+    padding-left: clamp(3rem, 10vw, 8rem);
   }
 
   .hero__image-container {
@@ -99,7 +116,13 @@
   }
 
   .hero img {
+    max-width: clamp(300px, 35vw, 650px);
     padding: 0 10rem 0 0;
+  }
+
+  .blue-bg {
+    min-height: 72%;
+    min-width: 80%;
   }
 
   .blue-bg--right {
@@ -109,22 +132,33 @@
 
   .hero__text {
     max-width: 500px;
+    padding: 0;
   }
 
   .hero__text-tittle {
-    font-size: 2.5rem;
-    text-align: left;
     padding: 0;
+    text-align: left;
   }
 
   .hero__text-para {
-    text-align: left;
     padding: 0;
+    text-align: left;
   }
 
   .hero__text-links {
-    justify-content: start;
     gap: 1rem;
+    justify-content: start;
     padding: 0;
+  }
+
+  .hero__text-links a {
+    padding: 1rem 2rem;
+  }
+}
+
+@media(min-width:1100px) {
+  .hero img {
+    max-width: clamp(500px, 40vw, 750px);
+    padding: 0 14rem 0 0;
   }
 }
