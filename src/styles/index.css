@@ -1,10 +1,11 @@
 * {
   --mandarina-color: hsl(0, 94%, 66%);
+  --soft-blue-color:hsl(231, 69%, 60%);
+  --grey: hsl(229, 8%, 60%);
   --blue: 229, 31%, 21%;
 }
 
 body {
   background-color: #f4f4f5;
   font-family: 'Rubik', sans-serif;
-  padding: 2.5rem 2rem;
 }
