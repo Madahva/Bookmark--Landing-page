@@ -4,6 +4,7 @@
   margin-top: 2rem;
   margin-bottom: 4rem;
   width: 100%;
+
 }
 
 .hero__image-container {
@@ -84,4 +85,46 @@
   border: 1px solid var(--grey);
   box-shadow: 3px 4px 4px #ccc;
   color: hsl(227, 5%, 37%);
+}
+
+@media (min-width: 920px) {
+  .hero {
+    flex-direction: row;
+    padding-left: clamp(3rem, 22vw, 8rem);
+    justify-content: space-between;
+  }
+
+  .hero__image-container {
+    max-width: max-content;
+  }
+
+  .hero img {
+    padding: 0 10rem 0 0;
+  }
+
+  .blue-bg--right {
+    border-bottom-left-radius: 10rem;
+    right: 0;
+  }
+
+  .hero__text {
+    max-width: 500px;
+  }
+
+  .hero__text-tittle {
+    font-size: 2.5rem;
+    text-align: left;
+    padding: 0;
+  }
+
+  .hero__text-para {
+    text-align: left;
+    padding: 0;
+  }
+
+  .hero__text-links {
+    justify-content: start;
+    gap: 1rem;
+    padding: 0;
+  }
 }

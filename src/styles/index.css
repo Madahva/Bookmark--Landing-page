@@ -3,9 +3,12 @@
   --soft-blue-color:hsl(231, 69%, 60%);
   --grey: hsl(229, 8%, 60%);
   --blue: 229, 31%, 21%;
+
+  --padding-desktop: 8rem;
 }
 
 body {
   background-color: #f4f4f5;
   font-family: 'Rubik', sans-serif;
+  overflow-x: hidden;
 }
