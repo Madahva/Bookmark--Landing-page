@@ -1,5 +1,10 @@
+* {
+  --mandarina-color: hsl(0, 94%, 66%);
+  --blue: 229, 31%, 21%;
+}
+
 body {
-  background-color: #fff;
+  background-color: #f4f4f5;
   font-family: 'Rubik', sans-serif;
   padding: 2.5rem 2rem;
 }

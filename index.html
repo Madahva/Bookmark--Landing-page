@@ -28,14 +28,14 @@
 <body>
   <header class="header">
     <img class="header__logo" src="./src/images/header/logo-bookmark.svg" draggable="false" alt="Bookmark Logo">
-    <button class="header__buttton">
-      <img src="./src/images/header/icon-hamburger.svg" alt="Hamburguer button" draggable="false" loading="lazy">
+    <button id="openBtn" class="header__buttton">
+      <i class="fa-solid fa-bars fa-xl"></i>
     </button>
 
-    <div class="header__modal">
+    <div id="modal" class="header__modal hidden">
       <div class="header__modal-header">
         <img class="header__logo" src="./src/images/header/logo-bookmark-white.svg" draggable="false" alt="Bookmark Logo">
-        <button class="header__modal-buttton">
+        <button id="closeBtn" class="header__modal-buttton">
           <i class="fa-solid fa-xmark fa-xl"></i>
         </button>
       </div>
@@ -43,23 +43,23 @@
       <div class="header__modal-body">
         <nav class="header__modal-nav">
           <div>
-            <a href="#features">Features</a>
+            <a class="header__modal-body__links" href="#features">Features</a>
           </div>
           <div>
-            <a href="#pricing">Pricing</a>
+            <a class="header__modal-body__links" href="#pricing">Pricing</a>
           </div>
           <div>
-            <a href="#contact">Contact</a>
+            <a class="header__modal-body__links" href="#contact">Contact</a>
           </div>
           <div>
-            <a href="#">Login</a>
+            <a class="header__modal-body__links" href="#">Login</a>
           </div>   
         </nav>
       </div>
 
       <div class="header__modal-footer">
-        <a href="#"><i class="fa-brands fa-facebook-square fa-xl"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>        
+        <a href="#"><i class="header__modal-body__links fa-brands fa-facebook-square fa-xl"></i></a>
+        <a href="#"><i class="header__modal-body__links fa-brands fa-twitter fa-xl"></i></a>        
       </div>
     </div>
 
@@ -71,7 +71,7 @@
     </nav>
   </header>
 
-  <!--  <main class="main">
+  <main class="main">
     <section class="hero">
       <div class="hero__text">
         <h1 class="hero__text-tittle">A Simple Bookmark Manager</h1>
@@ -199,7 +199,7 @@
         <button type="submit">Contact Us</button>
       </form>
     </section>
-  </main> -->
+  </main>
 
  <!--  <footer class="footer">
     <img src="./src/images/header/logo-bookmark.svg" alt="Bookmark Logo" class="footer__image">
