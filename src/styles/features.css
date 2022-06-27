@@ -18,6 +18,10 @@
   font-size: 15px;
 }
 
+.features__tab--hidden {
+  display: none;
+}
+
 .features__tab-buttons {
   align-items: center;
   display: flex;
@@ -30,6 +34,11 @@
   border-bottom: 1px solid rgba(145, 148, 161, 0.332);
   width: 100%;
   text-align: center;
+  cursor: pointer;
+}
+
+.features__tab-buttons div:hover button {
+  color: var(--mandarina-color);
 }
 
 .features__tab-buttons div:first-of-type {
@@ -39,15 +48,12 @@
 .features__tab-buttons button {
   background-color: transparent;
   border: none;
+  border-bottom: 5px solid transparent;
   color: rgba(63, 62, 62, 0.843);
   cursor: pointer;
   font-size: 18px;
   font-weight: 400;
   padding: 1rem 0;
-}
-
-.features__tab-buttons button:hover {
-  color: var(--mandarina-color);
 }
 
 .features__tab-buttons--active button {
