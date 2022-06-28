@@ -1,5 +1,5 @@
 .pricing {
-  margin-top: 8rem;
+  margin: 8rem 0;
 }
 
 .pricing__text {
@@ -83,11 +83,25 @@
 @media (min-width: 1100px) {
   .pricing__card-container {
     flex-direction: row;
-    gap: 1rem;
     justify-content: center;
+    gap: 1rem;
   }
 
   .pricing__card {
     min-width: auto;
+  }
+
+  .pricing__card:nth-child(2) {
+    margin-top: 3rem;
+  }
+
+  .pricing__card:nth-child(3) {
+    margin-top: 6rem;
+  }
+}
+
+@media (min-width: 1250px) {
+  .pricing__card-container {
+    gap: 4rem;
   }
 }
