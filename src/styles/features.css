@@ -159,7 +159,7 @@
     align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .features__tab-buttons {
@@ -173,10 +173,15 @@
   .features__tab__text {
     text-align: left;
     padding-left: 0;
+    max-width: 550px;
   }
 
   .features__tab__text p {
     margin: 0rem 0 3rem 0;
+  }
+
+  .features__tab__text a {
+    padding: 1rem 2rem;
   }
 
   .features__tab__image__blue-bg {
