@@ -1,0 +1,103 @@
+.faq {
+  align-items: center;
+  margin: 10rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq__text {
+  padding-inline: clamp(2.5rem, 10vw, 8rem);
+  margin-bottom: 6rem;
+}
+
+.faq__text-tittle {
+  font-weight: 500;
+  font-size: clamp(1.6rem, 5vw, 2.5rem);
+  line-height: 2rem;
+  margin: 6rem 0 0 0;
+  text-align: center;
+}
+
+.faq__text-para {
+  color: var(--grey);
+  line-height: 1.5rem;
+  margin: 1rem 0 2rem 0;
+  text-align: center;
+  font-size: 15px;
+}
+
+.faq__accordion {
+  padding-inline: clamp(2.5rem, 10vw, 8rem);
+}
+
+.faq__accordion-question {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(145, 148, 161, 0.332);
+  color: #000;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 1.5rem 0;
+  text-align: left;
+  transition: 0.4s;
+  width: 100%;
+}
+
+.faq__accordion-question:hover {
+  color: var(--mandarina-color);
+}
+
+.faq__accordion-question:after {
+  content: url(../images/faq/icon-arrow--down.svg);
+  float: right;
+  margin-left: 5px;
+}
+
+.faq__accordion-question--active {
+  border-color: white;
+  font-weight: 600;
+}
+
+.faq__accordion-question--active:after {
+  content: url(../images/faq/icon-arrow--up.svg);
+  color: red;
+  transform: rotate(0.5turn);
+}
+
+.faq__accordion-answer {
+  border-bottom: 1px solid rgba(145, 148, 161, 0.332);
+  color: var(--grey);
+  display: none;
+  font-size: 15px;
+  line-height: 1.5rem;
+  margin: 1.5rem 0 0 0;
+  padding-bottom: 1.5rem;
+}
+
+.faq__accordion-answer p {
+  margin: 0;
+}
+
+.faq__link {
+  background-color: var(--soft-blue-color);
+  border-radius: .3rem;
+  border: 1px solid transparent;
+  box-shadow: 2px 3px 4px #ccc;
+  color: white;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  padding: clamp(.8rem, 2vw, 1rem) clamp(1.5rem, 2vw, 2rem);
+  text-decoration: none;
+  transition: all ease-in-out 300ms;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.faq__link:hover {
+  background-color: transparent;
+  border: 1px solid var(--soft-blue-color);
+  box-shadow: 3px 4px 4px #ccc;
+  color: var(--soft-blue-color);
+}
