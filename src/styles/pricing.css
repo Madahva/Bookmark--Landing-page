@@ -69,3 +69,25 @@
   box-shadow: 3px 4px 4px #ccc;
   color: var(--soft-blue-color);
 }
+
+@media(min-width: 900px) {
+  .pricing__text-para {
+    margin: 2rem 0;
+  }
+
+  .pricing__card {
+    min-width: 350px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .pricing__card-container {
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .pricing__card {
+    min-width: auto;
+  }
+}
