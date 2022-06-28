@@ -1,0 +1,71 @@
+.pricing {
+  margin-top: 8rem;
+}
+
+.pricing__text {
+  padding-inline: clamp(2.5rem, 10vw, 8rem);
+  margin-bottom: 6rem;
+}
+
+.pricing__text-tittle {
+  font-weight: 500;
+  font-size: clamp(1.6rem, 5vw, 2.5rem);
+  line-height: 2.5rem;
+  margin: 6rem 0 0 0;
+  text-align: center;
+}
+
+.pricing__text-para {
+  color: var(--grey);
+  line-height: 1.5rem;
+  margin: 1rem 0 2rem 0;
+  text-align: center;
+  font-size: 15px;
+}
+
+.pricing__card-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.pricing__card {
+  align-items: center;
+  border-radius: .5rem;
+  box-shadow: 1px 8px 13px 1px rgba(141, 167, 189, 0.455);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2.5rem 0;
+}
+
+.pricing__card-text h3 {
+  font-weight: 500;
+  margin: 1rem  0;
+}
+
+.pricing__card-text p {
+  color: var(--grey);
+
+}
+
+.pricing__card a {
+  background-color: var(--soft-blue-color);
+  border-radius: .3rem;
+  border: 1px solid transparent;
+  box-shadow: 2px 3px 4px #ccc;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  padding: clamp(.8rem, 2vw, 1rem) clamp(1.5rem, 2vw, 2rem);
+  text-decoration: none;
+  transition: all ease-in-out 300ms;
+}
+
+.pricing__card a:hover {
+  background-color: transparent;
+  border: 1px solid var(--soft-blue-color);
+  box-shadow: 3px 4px 4px #ccc;
+  color: var(--soft-blue-color);
+}
