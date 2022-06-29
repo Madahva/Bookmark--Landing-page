@@ -121,6 +121,7 @@
 
 @media(min-width: 900px) {
   .faq__text-tittle {
+    margin-top: 3rem;
     font-size: 2rem;
   }
 
