@@ -68,11 +68,10 @@
   border-bottom: 1px solid rgba(145, 148, 161, 0.332);
   color: var(--grey);
   font-size: 15px;
-  line-height: 1.5rem;
+  line-height: clamp(1.5rem, 7vw, 2rem);
   max-height: 0;
   overflow: hidden;
   transition: 0.4s;
-
 }
 
 .show-text {
@@ -104,11 +103,11 @@
   display: inline-block;
   font-size: 15px;
   font-weight: 500;
+  margin-top: 3rem;
   padding: clamp(.8rem, 2vw, 1rem) clamp(1.5rem, 2vw, 2rem);
+  text-align: center;
   text-decoration: none;
   transition: all ease-in-out 300ms;
-  margin-top: 3rem;
-  text-align: center;
 }
 
 .faq__link:hover {
@@ -116,4 +115,10 @@
   border: 1px solid var(--soft-blue-color);
   box-shadow: 3px 4px 4px #ccc;
   color: var(--soft-blue-color);
+}
+
+@media(min-width: 900px) {
+  .faq__text-para {
+    margin-top: 2rem;
+  }
 }
