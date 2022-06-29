@@ -92,11 +92,11 @@
   }
 
   .pricing__card:nth-child(2) {
-    margin-top: 3rem;
+    margin-top: 4rem;
   }
 
   .pricing__card:nth-child(3) {
-    margin-top: 6rem;
+    margin-top: 8rem;
   }
 }
 
