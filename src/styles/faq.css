@@ -7,24 +7,25 @@
 }
 
 .faq__text {
+  margin-bottom: 3rem;
   padding-inline: clamp(2.5rem, 10vw, 8rem);
-  margin-bottom: 6rem;
 }
 
 .faq__text-tittle {
-  font-weight: 500;
   font-size: clamp(1.6rem, 5vw, 2.5rem);
+  font-weight: 500;
   line-height: 2rem;
-  margin: 6rem 0 0 0;
+  margin: 1rem 0 0 0;
   text-align: center;
 }
 
 .faq__text-para {
   color: var(--grey);
+  font-size: 15px;
   line-height: 1.5rem;
   margin: 1rem 0 2rem 0;
+  max-width: 550px;
   text-align: center;
-  font-size: 15px;
 }
 
 .faq__accordion {
@@ -119,6 +120,10 @@
 }
 
 @media(min-width: 900px) {
+  .faq__text-tittle {
+    font-size: 2rem;
+  }
+
   .faq__text-para {
     margin-top: 2rem;
     font-size: 16px;
