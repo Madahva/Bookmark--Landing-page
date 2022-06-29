@@ -1,8 +1,9 @@
 .faq {
   align-items: center;
-  margin: 10rem 0;
+  margin: 10rem auto;
   display: flex;
   flex-direction: column;
+  max-width: 800px;
 }
 
 .faq__text {
@@ -120,5 +121,19 @@
 @media(min-width: 900px) {
   .faq__text-para {
     margin-top: 2rem;
+    font-size: 16px;
+  }
+
+  .faq__accordion-question {
+    font-size: 18px;
+  }
+
+  .faq__accordion-answer {
+    font-size: 16px;
+  }
+
+  .faq__link {
+    margin-top: 6rem;
+    padding-inline: 3rem;
   }
 }
