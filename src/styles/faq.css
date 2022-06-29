@@ -38,7 +38,8 @@
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
-  padding: 1.5rem 0;
+  line-height: 1.5rem;
+  padding: 2rem 0;
   text-align: left;
   transition: 0.4s;
   width: 100%;
@@ -51,12 +52,10 @@
 .faq__accordion-question:after {
   content: url(../images/faq/icon-arrow--down.svg);
   float: right;
-  margin-left: 5px;
 }
 
 .faq__accordion-question--active {
-  border-color: white;
-  font-weight: 600;
+  border-color: transparent;
 }
 
 .faq__accordion-question--active:after {
@@ -68,14 +67,31 @@
 .faq__accordion-answer {
   border-bottom: 1px solid rgba(145, 148, 161, 0.332);
   color: var(--grey);
-  display: none;
   font-size: 15px;
   line-height: 1.5rem;
-  margin: 1.5rem 0 0 0;
-  padding-bottom: 1.5rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s;
+
+}
+
+.show-text {
+  animation-name: toShow;
+  animation-duration: 2s;
+}
+
+@keyframes toShow {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .faq__accordion-answer p {
+  padding-bottom: 1.5rem;
   margin: 0;
 }
 

@@ -67,3 +67,22 @@ function toHide(tab, btn) {
     btn.classList.remove('features__tab-buttons--active');
   }
 }
+
+
+
+//FAQ Accordion Section
+
+var acc = document.querySelectorAll(".faq__accordion-question");
+
+for (let i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("faq__accordion-question--active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+    panel.classList.toggle('show-text');
+  });
+}
