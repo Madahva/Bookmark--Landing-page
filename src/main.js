@@ -2,6 +2,7 @@
 
 const openBtn = document.querySelector('#openBtn');
 const closeBtn = document.querySelector('#closeBtn');
+const headerImage = document.querySelector('#header-image');
 
 const modalLinks = document.querySelectorAll('.header__modal-body__links')
 const modal = document.querySelector('#modal');
@@ -9,11 +10,13 @@ const modal = document.querySelector('#modal');
 openBtn.onclick = () => {
   modal.classList.remove('hidden');
   openBtn.classList.add('hidden');
+  headerImage.style.visibility= 'hidden'
 }
 
 closeBtn.onclick = () => {
   modal.classList.add('hidden');
   openBtn.classList.remove('hidden');
+  headerImage.style.visibility= 'visible'
 }
 
 for (var i = 0; i < modalLinks.length; i++) {
@@ -88,6 +91,7 @@ for (let i = 0; i < acc.length; i++) {
 }
 
 
+
 // Contact Section
 
 const email = document.querySelector('#email');
@@ -106,7 +110,7 @@ document.querySelector('form').addEventListener('submit', (e) => {
 
 function validateEmail(mail) {
   const isValid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail);
-  
+
   isValid ? handleSuccest() : handleError();
 
   function handleSuccest() {
