@@ -3,8 +3,7 @@
 #### Built with
 
 - Semantic HTML5 markup
-
-- Flexbox
+- CSS Flexbox
 - Mobile-first workflow
 - JavaScript
 - Figma
