@@ -7,6 +7,10 @@
   --padding-desktop: 8rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #fff;
   font-family: 'Rubik', sans-serif;
