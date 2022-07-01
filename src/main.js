@@ -86,3 +86,49 @@ for (let i = 0; i < acc.length; i++) {
     panel.classList.toggle('show-text');
   });
 }
+
+
+// Contact Section
+
+const email = document.querySelector('#email');
+const inputContainer = document.querySelector('.contact__input-container');
+const msgContainer = document.querySelector('.contact__msg');
+const errorMsg = document.querySelector('.contact__msg-error');
+const errorImg = document.querySelector('.contact__input-image--error');
+const succestMsg = document.querySelector('.contact__msg-succest');
+const succestImg = document.querySelector('.contact__input-image--succest');
+
+document.querySelector('form').addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  validateEmail((email.value.trim()));
+})
+
+function validateEmail(mail) {
+  const isValid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail);
+  
+  isValid ? handleSuccest() : handleError();
+
+  function handleSuccest() {
+    errorMsg.style.display = 'none';
+    errorImg.style.display = 'none';
+    inputContainer.classList.remove('contact__input-container--error');
+
+    inputContainer.classList.add('contact__input-container--succest');
+    msgContainer.style.display = 'block'
+    succestMsg.style.display = 'block'
+    succestImg.style.visibility = 'visible'
+    email.value = '';
+  }
+
+  function handleError() {
+    succestMsg.style.display = 'none';
+    succestImg.style.visibility = 'hidden'
+    inputContainer.classList.remove('contact__input-container--succest');
+
+    inputContainer.classList.add('contact__input-container--error');
+    msgContainer.style.display = 'block';
+    errorMsg.style.display = 'block';
+    errorImg.style.display = 'block';
+  }
+}

@@ -220,10 +220,20 @@
         <h3 class="contact__text-tittle">Stay up-to-date with what we’re doing</h3>
       </div>
       
-      <form class="contact__form">
-        <input type="email" name="" id="" placeholder="Enter your Email address">
-        <button type="submit">Contact Us</button>
+      <form id="form" class="contact__form">
+        <div class="contact__input-container">
+          <input id="email" spellcheck="false" placeholder="Enter your Email address">
+          <img class="contact__input-image--error" src="./src/images/contact/icon-error.svg" draggable="false" alt="Error icon">
+          <i class="fa-solid fa-circle-check fa-xl contact__input-image--succest"></i>
+          <div class="contact__msg">
+            <p class="contact__msg-error"> Whoops, make sure it’s an email</p>
+            <p class="contact__msg-succest">Confirmed! You’re on the newsletter list!</p>
+          </div>
+        </div>
+        <button id="button">Contact Us</button>
       </form>
+      
+      
     </section>
   </main>
 
