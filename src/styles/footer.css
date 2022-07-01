@@ -1,7 +1,6 @@
 footer {
   background-color: hsl(var(--blue));
   padding-inline: clamp(2.5rem, 10vw, 8rem);
-
 }
 
 .footer-container {
@@ -69,7 +68,12 @@ footer {
 @media(min-width: 1100px) {
   .footer-container {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     max-width: none;
+  }
+
+  .footer__social {
+    gap: 2rem;
+    padding-left: 25rem;
   }
 }
