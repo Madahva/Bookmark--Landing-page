@@ -1,5 +1,7 @@
 footer {
   background-color: hsl(var(--blue));
+  padding-inline: clamp(2.5rem, 10vw, 8rem);
+
 }
 
 .footer-container {
@@ -47,4 +49,27 @@ footer {
 
 .footer__social a:hover {
   color: var(--mandarina-color);
+}
+
+@media(min-width: 800px) {
+  .footer-container {
+    gap: 3rem;
+  }
+
+  .footer__links {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .footer__social {
+    gap: 3rem;
+  }
+}
+
+@media(min-width: 1100px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: none;
+  }
 }
