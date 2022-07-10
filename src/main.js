@@ -10,18 +10,19 @@ const modal = document.querySelector('#modal');
 openBtn.onclick = () => {
   modal.classList.remove('hidden');
   openBtn.classList.add('hidden');
-  headerImage.style.visibility= 'hidden'
+  headerImage.style.visibility = 'hidden'
 }
 
 closeBtn.onclick = () => {
   modal.classList.add('hidden');
   openBtn.classList.remove('hidden');
-  headerImage.style.visibility= 'visible'
+  headerImage.style.visibility = 'visible'
 }
 
 for (var i = 0; i < modalLinks.length; i++) {
   modalLinks[i].onclick = () => {
     modal.classList.add('hidden');
+    headerImage.style.visibility = 'visible';
     openBtn.classList.remove('hidden');
   }
 }
