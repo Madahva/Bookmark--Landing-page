@@ -1,4 +1,4 @@
-# Bookmark-landing-page - CSS &amp; JavaScript
+# Bookmark - Landing page
 
 #### Built with
 
