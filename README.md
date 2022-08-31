@@ -1,6 +1,6 @@
 # Bookmark - Landing page
 
-### Built with
+## Built with
 
 - Semantic HTML5 markup
 - CSS Flexbox
